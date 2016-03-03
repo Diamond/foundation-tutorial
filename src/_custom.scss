@@ -1,0 +1,88 @@
+h2 {
+  color: $primary-color;
+  font-size: rem-calc(42);
+  margin: rem-calc(20 0);
+}
+
+.promo-video {
+  position: static;
+  top:0;
+
+  #overlay {
+    position: absolute;
+    top:0;
+    left:0;
+    height: 740px;
+    width:100%;
+    /* Permalink - use to edit and share this gradient: http://colorzilla.com/gradient-editor/#236db5+0,021744+100&1+0,0.75+100 */
+    background: -moz-linear-gradient(top,  rgba(35,109,181,1) 0%, rgba(2,23,68,0.75) 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top,  rgba(35,109,181,1) 0%,rgba(2,23,68,0.75) 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom,  rgba(35,109,181,1) 0%,rgba(2,23,68,0.75) 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#236db5', endColorstr='#bf021744',GradientType=0 ); /* IE6-9 */
+
+  }
+
+  .header-content {
+    background-color: transparent;
+    position: absolute;
+    top:0;
+    left:0;
+    width:100%;
+  }
+  .headliner {
+    left:0;
+    top:50%;
+    position:absolute;
+    width: 100%;
+    transform: translateY(-50%);
+    h1 {
+      border-top: 2px solid $white;
+      border-bottom: 2px solid $white;
+      color: $white;
+      text-transform: uppercase;
+    }
+  }
+}
+
+.menu-icon,
+.menu-icon:hover {
+  width: rem-calc(60);
+  height: rem-calc(36);
+  margin-top: rem-calc(25);
+  &::after {
+    background-color: $white;
+    height: rem-calc(8);
+    box-shadow: 0 28px 0 $white, 0 14px 0 $white;
+  }
+}
+
+section.rooms {
+  padding: rem-calc(30 0);
+  div.room-image {
+    position:relative;
+
+    .room-title {
+      position: absolute;
+      bottom: 0;
+      left: 0;
+      padding-left: rem-calc(20);
+
+      h3 {
+        color: $white;
+      }
+    }
+  }
+
+  div.room-content {
+    background-color: $white;
+    padding: rem-calc(20);
+  }
+}
+
+.button {
+  @include button-style($secondary-color, darken($secondary-color, 10), $white);
+  text-transform: uppercase;
+  font-weight: bold;
+  font-size: rem-calc(16);
+  margin: rem-calc(20 0);
+}
