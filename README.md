@@ -1,3 +1,3 @@
-# React/Redux/Foundation Starter Kit
+# Foundation Tutorial
 
-This is a sample React/Redux/Foundation Starter Kit using Webpack, mostly just to figure out precisely how the eff to do this.
+I'm following along a Udemy course on Foundation 6. Don't mind me...
