@@ -10,8 +10,9 @@ module.exports = {
     app: ['./public/index.html', './src/app.jsx']
   },
   output: {
-    filename: 'public/[name].js',
-    publicPath: 'public/compiled'
+    filename: '../[name].js',
+    path: './public/compiled',
+    publicPath: './public'
   },
   module: {
     loaders: [
