@@ -86,3 +86,119 @@ section.rooms {
   font-size: rem-calc(16);
   margin: rem-calc(20 0);
 }
+
+/*** Separator Image ***/
+.separator-image {
+  height: 200px;
+  background-position: center center;
+  background-repeat: no-repeat;
+  background-attachment: scroll;
+  @include breakpoint(medium) {
+    height: 350px;
+    background-size: cover;
+  }
+  @include breakpoint(large) {
+    background-size: cover;
+  }
+
+}
+.pool-image {
+  background-image: url("../public/assets/images/separators/small/separator01-image.jpg");
+  @include breakpoint(medium) {
+    background-image: url("../public/assets/images/separators/medium/separator01-image.jpg");
+  }
+  @include breakpoint(large) {
+    background-image: url("../public/assets/images/separators/large/separator01-image.jpg");
+  }
+}
+
+.bar-image {
+  background-image: url("../public/assets/images/separators/small/separator02-image.jpg");
+  @include breakpoint(medium) {
+    background-image: url("../public/assets/images/separators/medium/separator02-image.jpg");
+  }
+  @include breakpoint(large) {
+    background-image: url("../public/assets/images/separators/large/separator02-image.jpg");
+  }
+}
+
+/*** About Us Section ***/
+.about-us-gallery {
+  @include breakpoint(medium) {
+    height: rem-calc(560);
+    position: relative;
+  }
+  @include breakpoint(medium) {
+    height: rem-calc(420);
+  }
+  .empty {
+    @include breakpoint(medium) {
+      height: rem-calc(560);
+    }
+    @include breakpoint(medium) {
+      height: rem-calc(420);
+    }
+  }
+  div.content-about-us {
+    @include breakpoint(medium) {
+      position: absolute;
+      top: rem-calc(20);
+      left:0;
+      width: 100%;
+
+    }
+  }
+}
+.bluebg {
+  background-color: $primary-color;
+  h2.white {
+    color: $white;
+  }
+}
+
+section.booking {
+  padding: rem-calc(50);
+}
+
+footer {
+  background-color: $primary-color;
+  padding-top: rem-calc(30);
+  color: $white;
+  .menu {
+    a {
+      color: $white;
+    }
+  }
+
+  .contact-information {
+    li {
+      position: relative;
+      height: 100px;
+      padding-left: 60px;
+      padding-top: 35px;
+
+      &:first-child {
+        padding-top: 22px;
+      }
+
+      i {
+        font-size: rem-calc(60);
+        position: absolute;
+        top: 0;
+        left: 0;
+      }
+    }
+  }
+
+  .social {
+    i {
+      font-size: rem-calc(60);
+    }
+  }
+
+  p.copyright {
+    padding: rem-calc(20 0);
+    background-color: darken($primary-color, 5);
+    margin: 0;
+  }
+}
