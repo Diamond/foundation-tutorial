@@ -11,8 +11,7 @@ module.exports = {
   },
   output: {
     filename: '../[name].js',
-    path: './public/compiled',
-    publicPath: './public'
+    path: './public/compiled'
   },
   module: {
     loaders: [

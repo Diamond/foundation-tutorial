@@ -34,7 +34,7 @@
 /******/ 	__webpack_require__.c = installedModules;
 
 /******/ 	// __webpack_public_path__
-/******/ 	__webpack_require__.p = "./public";
+/******/ 	__webpack_require__.p = "";
 
 /******/ 	// Load entry module and return exports
 /******/ 	return __webpack_require__(0);
@@ -52,7 +52,7 @@
 /* 1 */
 /***/ function(module, exports, __webpack_require__) {
 
-	module.exports = __webpack_require__.p + "b3acf4f9271ceb68978820430833569d.html";
+	module.exports = __webpack_require__.p + "6c8ec7a6d8f72803a30898328bddadf6.html";
 
 /***/ },
 /* 2 */
